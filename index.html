@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>CookieCraft — The Perfect Cookie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="CookieCraft home">
+      <span class="brand-icon">🍪</span>
+      <span>Cookie<span class="red">Craft</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#menu">Order Now <span>→</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Fresh <span>•</span> Delicious <span>•</span> Handmade</p>
+        <h1>The Perfect<br><span>Cookie.</span></h1>
+        <p class="intro">Soft, chewy, and loaded with chocolate chips.<br class="desktop-only"> A treat you’ll love!</p>
+        <a class="primary-cta" href="#menu">Get Yours Today <span>→</span></a>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="assets/cookie-hero.png" alt="Fresh golden chocolate chip cookie" class="hero-image">
+      </div>
+    </section>
+
+    <section class="features" id="about" aria-label="Why CookieCraft">
+      <article class="feature">
+        <span class="feature-icon">✧</span>
+        <div><h2>Premium Ingredients</h2><p>Only the best ingredients.</p></div>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">♨</span>
+        <div><h2>Handmade with Love</h2><p>Baked fresh daily.</p></div>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">☺</span>
+        <div><h2>Pure Happiness</h2><p>In every bite.</p></div>
+      </article>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <h2>Meet your new favourite.</h2>
+      <p>One classic cookie. Plenty of chocolate. Absolutely no regrets.</p>
+      <button class="primary-cta order-button" id="orderButton">I'm interested <span>→</span></button>
+      <p class="order-message" id="orderMessage" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <a class="brand" href="#home">🍪 Cookie<span class="red">Craft</span></a>
+    <p>Made for cookie lovers. © <span id="year"></span> CookieCraft.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
